@@ -1,0 +1,63 @@
+apply plugin:'groovy'
+apply plugin:'war'
+apply plugin:'jetty'
+apply plugin:'eclipse'
+apply plugin:'eclipse-wtp'
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+	integrationTest
+}
+
+httpPort = 8080
+stopPort = 9451
+stopKey = 'foo'
+
+[jettyRun, jettyRunWar]*.daemon = true
+
+task intTest(type:Test, dependsOn:jettyRun) {
+	testClassesDir = sourceSets.integrationTest.output.classesDir
+	classpath = sourceSets.integrationTest.runtimeClasspath
+	jettyStop.execute()
+}
+
+check.dependsOn intTest
+
+project.ext.db = file("$buildDir/baseball.h2.db")
+
+task generateTestDb(dependsOn:classes, type:JavaExec) {
+    onlyIf { !db.exists() }
+    main = 'service.populate_stadium_data'
+    classpath sourceSets.main.runtimeClasspath
+}
+
+task deployDb(dependsOn:generateTestDb, type:Copy) {
+    from db
+    into 'src/main/webapp/build'
+}
+
+war.dependsOn deployDb
+
+task removeDb(type:Delete) {
+    delete 'src/main/webapp/build'
+}
+
+clean.dependsOn removeDb
+
+task wrapper(type:Wrapper) {
+    gradleVersion = '1.6'
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.1.6'
+
+    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+    testRuntime "cglib:cglib-nodep:2.2"
+    runtime 'com.h2database:h2:1.2.140'
+
+	integrationTestCompile configurations.testCompile
+	integrationTestRuntime configurations.testRuntime
+}

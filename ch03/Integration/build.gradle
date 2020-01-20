@@ -1,0 +1,27 @@
+apply plugin:'groovy'
+apply plugin:'eclipse'
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        java { srcDirs = [] }
+        groovy { srcDir 'src' }
+    }
+    test {
+        java { srcDirs = [] }
+        groovy { srcDir 'test' }
+        resources { srcDir 'resources' }
+    }
+}
+
+task wrapper(type:Wrapper) {
+    gradleVersion = '1.6'
+}
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:2.1.6"
+    testCompile "org.spockframework:spock-core:0.7-groovy-2.0"
+}

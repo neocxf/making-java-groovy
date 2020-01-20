@@ -1,0 +1,11 @@
+include 'ch01:intro'
+include 'ch02:chuckgroovy', 'ch02:googlechart'
+include 'ch03:integration'
+include 'ch04:integration'
+include 'ch05:GradleLocal', 'ch05:Grapes', 'ch05:GroovyAnt', 'ch05:GroovyGradle', 'ch05:HelloAnt', 'ch05:HelloAntBuilder', 'ch05:HelloAntWithGroovy', 'ch05:HelloGradle', 'ch05:HelloWorld', 'ch05:MinimalGradle', 'ch05:weather_gmaven', 'ch05:weather_groovyeclipse'
+include 'ch06:Banking', 'ch06:JunitTests', 'ch06:Spock-Examples', 'ch06:Testing'
+include 'ch07:AccountManagement', 'ch07:GroovyAspect', 'ch07:GroovyMortgage'
+include 'ch08:HibernateJPA', 'ch08:RawJDBC', 'ch08:shopping', 'ch08:VampireMovies'
+include 'ch09:HelloRestlet', 'ch09:Jersey16', 'ch09:people', 'ch09:people_hate', 'ch09:people_java', 'ch09:people_readwrite', 'ch09:shopping'
+include 'ch10:CategoryDemo', 'ch10:holygrails'
+

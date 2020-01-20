@@ -1,0 +1,12 @@
+build
+bin
+Servers
+.gradle
+.project
+.classpath
+.settings
+.metadata
+*.iml
+*.ipr
+*.iws
+

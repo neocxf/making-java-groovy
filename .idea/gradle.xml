@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="C:/ProgramData/chocolatey/lib/gradle/tools/gradle-6.0.1" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ch01" />
+            <option value="$PROJECT_DIR$/ch01/Intro" />
+            <option value="$PROJECT_DIR$/ch02" />
+            <option value="$PROJECT_DIR$/ch02/chuckgroovy" />
+            <option value="$PROJECT_DIR$/ch02/googlechart" />
+            <option value="$PROJECT_DIR$/ch03" />
+            <option value="$PROJECT_DIR$/ch03/Integration" />
+            <option value="$PROJECT_DIR$/ch04" />
+            <option value="$PROJECT_DIR$/ch04/Integration" />
+            <option value="$PROJECT_DIR$/ch05" />
+            <option value="$PROJECT_DIR$/ch05/GradleLocal" />
+            <option value="$PROJECT_DIR$/ch05/Grapes" />
+            <option value="$PROJECT_DIR$/ch05/GroovyAnt" />
+            <option value="$PROJECT_DIR$/ch05/GroovyGradle" />
+            <option value="$PROJECT_DIR$/ch05/HelloAnt" />
+            <option value="$PROJECT_DIR$/ch05/HelloAntBuilder" />
+            <option value="$PROJECT_DIR$/ch05/HelloAntWithGroovy" />
+            <option value="$PROJECT_DIR$/ch05/HelloGradle" />
+            <option value="$PROJECT_DIR$/ch05/HelloWorld" />
+            <option value="$PROJECT_DIR$/ch05/MinimalGradle" />
+            <option value="$PROJECT_DIR$/ch05/weather_gmaven" />
+            <option value="$PROJECT_DIR$/ch05/weather_groovyeclipse" />
+            <option value="$PROJECT_DIR$/ch06" />
+            <option value="$PROJECT_DIR$/ch06/Banking" />
+            <option value="$PROJECT_DIR$/ch06/JUnitTests" />
+            <option value="$PROJECT_DIR$/ch06/Spock-Examples" />
+            <option value="$PROJECT_DIR$/ch06/Testing" />
+            <option value="$PROJECT_DIR$/ch07" />
+            <option value="$PROJECT_DIR$/ch07/AccountManagement" />
+            <option value="$PROJECT_DIR$/ch07/GroovyAspect" />
+            <option value="$PROJECT_DIR$/ch07/GroovyMortgage" />
+            <option value="$PROJECT_DIR$/ch08" />
+            <option value="$PROJECT_DIR$/ch08/HibernateJPA" />
+            <option value="$PROJECT_DIR$/ch08/RawJDBC" />
+            <option value="$PROJECT_DIR$/ch08/VampireMovies" />
+            <option value="$PROJECT_DIR$/ch08/shopping" />
+            <option value="$PROJECT_DIR$/ch09" />
+            <option value="$PROJECT_DIR$/ch09/HelloRestlet" />
+            <option value="$PROJECT_DIR$/ch09/Jersey16" />
+            <option value="$PROJECT_DIR$/ch09/people" />
+            <option value="$PROJECT_DIR$/ch09/people_hate" />
+            <option value="$PROJECT_DIR$/ch09/people_java" />
+            <option value="$PROJECT_DIR$/ch09/people_readwrite" />
+            <option value="$PROJECT_DIR$/ch09/shopping" />
+            <option value="$PROJECT_DIR$/ch10" />
+            <option value="$PROJECT_DIR$/ch10/CategoryDemo" />
+            <option value="$PROJECT_DIR$/ch10/holygrails" />
+          </set>
+        </option>
+        <option name="useAutoImport" value="true" />
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
